@@ -14,13 +14,13 @@
             <main>
                 <div class="container">
 
-                    <div class="card">
+                    <div class="card" v-for="musica in risposta">
                         <div class="img">
-                            <img src="">
+                            <img :src="musica.poster">
                         </div>
-                        <h3></h3>
-                        <div class="text">{{message}}</div>
-                        <div class="text"></div>
+                        <h3>{{musica.title}}</h3>
+                        <div class="text">{{musica.author}}</div>
+                        <div class="text">{{musica.genre}}</div>
                     </div>
 
                 </div>
